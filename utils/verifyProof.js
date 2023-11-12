@@ -15,6 +15,7 @@ function verifyProof(proof, leaf, root) {
     } else {
       data = concat(data, proof[i].data);
     }
+    
   }
 
   return bytesToHex(data) === root;
